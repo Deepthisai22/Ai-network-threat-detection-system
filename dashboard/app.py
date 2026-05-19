@@ -26,9 +26,6 @@ st.set_page_config(
 # Main title
 st.title("🚦 Network Traffic AI Security Dashboard")
 
-st.subheader("📡 Real-Time Traffic Monitor")
-
-traffic_placeholder = st.empty()
 
 st.markdown("""
 This AI system analyzes network traffic
@@ -82,24 +79,6 @@ features = [
     feature_3,
     feature_4
 ] + remaining_features
-
-# Simulated live traffic values
-live_data = pd.DataFrame({
-    "Time": list(range(1, 11)),
-    "Traffic": [10, 15, 8, 20, 17, 30, 25, 35, 28, 40]
-})
-
-traffic_chart = px.line(
-    live_data,
-    x="Time",
-    y="Traffic",
-    title="Live Network Traffic"
-)
-
-traffic_placeholder.plotly_chart(
-    traffic_chart,
-    use_container_width=True
-)
 
 # Prediction button
 if st.button("Predict Traffic"):
