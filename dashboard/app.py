@@ -67,7 +67,12 @@ feature_4 = st.number_input(
 )
 
 # Remaining features
-remaining_features = [0] * 38
+remaining_features = [
+    1, 2, 1, 3, 2, 1, 5, 2, 1, 3,
+    2, 1, 4, 2, 1, 3, 2, 1, 5, 2,
+    1, 3, 2, 1, 4, 2, 1, 3, 2, 1,
+    5, 2, 1, 3, 2, 1, 4, 2
+]
 
 # Final feature list
 features = [
