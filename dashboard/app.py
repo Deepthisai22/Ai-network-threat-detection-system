@@ -106,7 +106,7 @@ if st.button("Predict Traffic"):
     try:
         # Call FastAPI backend
         response = requests.post(
-            "https://your-render-url.onrender.com/predict",
+            "https://ai-network-threat-detection-system.onrender.com/predict",
             json=payload
         )
 
